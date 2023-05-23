@@ -1,0 +1,18 @@
+{
+  "name": "xyz-marketing-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "data": "node contentful",
+    "dev": "npm run data && ENVIRONMENT=local next dev",
+    "build": "npm run data && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.16.4",
+    "contentful": "^10.2.1",
+    "next": "13.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
