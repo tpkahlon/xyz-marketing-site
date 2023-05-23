@@ -18,7 +18,7 @@ const options =
 
 const client = createClient(options);
 
-client.getEntries().then((data) => {
+client.withoutUnresolvableLinks.getEntries().then((data) => {
   const [siteEntry] = data.items.filter(
     (entry) => entry.sys.contentType.sys.id === "site"
   );
